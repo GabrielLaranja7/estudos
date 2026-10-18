@@ -11,6 +11,7 @@ export default class Main extends Component {
 
     render() {
         return <div ClassName="main">
+            <h1>Hello world</h1>
             <h1>Lista de Tarefas</h1> 
             <form action="#">
             <input type='text' />
