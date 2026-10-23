@@ -6,6 +6,13 @@ export default class Main extends Component {
         this.state = {
             novaTarefa: '',
         };
+        this.intMudou = this.intMudou.bind(this);
+    }
+    
+    inputMudou(e){
+        this.Setstate({
+            novaTarefa:e.target.value,
+        });
     }
 
 
@@ -14,7 +21,7 @@ export default class Main extends Component {
             <h1>Hello world</h1>
             <h1>Lista de Tarefas</h1> 
             <form action="#">
-            <input type='text' />
+            <input onChange={this.inputMudou} type='text' />
             <button type="submit">enviar</button>
             </form>
         </div>
